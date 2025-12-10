@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lala's Bakes and Cakes | Delicious Home Baking</title>
+    <meta name="description"
+        content="Delicious home-baked cakes and treats by Lala. Level 2 Food Hygiene Certified. Order your custom bakes today!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Lala's Bakes & Cakes 🧁</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact" class="btn-nav">Order Now</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Life is Sweet, Eat a Treat!</h1>
+            <p>Delicious home-baked cakes and goodies made with love.</p>
+            <a href="#contact" class="btn-main">Get a Quote</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Lala</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">Welcome to my home bakery! 🎂</p>
+                    <p>I'm Lana, the baker behind <strong>Lala's Bakes and Cakes</strong>. I have a passion for creating
+                        delicious, beautiful treats for all occasions.</p>
+                    <p>Rest assured, I am <strong>Level 2 Food Hygiene Certified 🛡️</strong>, so your bakes are in safe
+                        hands.</p>
+                    <p>Whether it's a birthday, celebration, or just a Tuesday craving, I've got you covered!</p>
+                </div>
+                <div class="about-image">
+                    <div class="img-placeholder">👩‍🍳</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <p>Delicious treats baked fresh for you. We also take custom requests!</p>
+            <div class="menu-images">
+                <img src="images/Menu1.JPG" alt="Lala's Bakes and Cakes Menu Page 1" class="menu-img">
+                <img src="images/Menu2.JPG" alt="Lala's Bakes and Cakes Menu Page 2" class="menu-img">
+            </div>
+            <a href="#contact" class="btn-main">Request a Quote</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <h2>Fresh from the Oven</h2>
+            <div class="gallery-grid">
+                <!-- User Provided Images (JPGs only) -->
+                <div class="gallery-item"><img src="images/2A74F68E-B05F-47A5-9B65-29D266305D0A.jpg" alt="Bake"
+                        loading="lazy"></div>
+                <div class="gallery-item"><img src="images/3455d246-c5b0-4202-b04a-4699eb9e8d9a.jpg" alt="Bake"
+                        loading="lazy"></div>
+                <div class="gallery-item"><img src="images/34bd6a22-5114-4ce7-b776-2069d4742a0b.jpg" alt="Bake"
+                        loading="lazy"></div>
+                <div class="gallery-item"><img src="images/76743621-fb6a-4015-a9fb-501fd2a74b4e.jpg" alt="Bake"
+                        loading="lazy"></div>
+                <div class="gallery-item"><img src="images/769689AB-50D6-49F3-8302-ACB05531F889.jpg" alt="Bake"
+                        loading="lazy"></div>
+                <div class="gallery-item"><img src="images/E727CEB8-2B15-48F6-A82C-A0C2AAF91FA0.jpg" alt="Bake"
+                        loading="lazy"></div>
+                <div class="gallery-item"><img src="images/IMG-20250713-WA0009_Original.JPG" alt="Bake" loading="lazy">
+                </div>
+                <div class="gallery-item"><img src="images/IMG_0344.jpg" alt="Bake" loading="lazy"></div>
+                <div class="gallery-item"><img src="images/IMG_1051.JPG" alt="Bake" loading="lazy"></div>
+                <!-- Videos -->
+                <div class="gallery-item video-item">
+                    <video controls>
+                        <source src="images/09CEE852-B24C-435F-98B9-21EE2F3AF79F.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="gallery-item video-item">
+                    <video controls>
+                        <source src="images/C1F4770E-8824-4DE2-9F10-10625E2CFC7D.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <p class="insta-link">Check out more on Instagram <a href="https://www.instagram.com/lalasbakesandcakes/"
+                    target="_blank">@lalasbakesandcakes</a></p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Order Enquiry</h2>
+            <p>Ready to order? Fill out the form below and I'll get back to you with a quote!</p>
+
+            <form id="enquiryForm" class="enquiry-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date Required</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="type">Type of Bake</label>
+                    <select id="type" name="type">
+                        <option value="cake">Custom Cake</option>
+                        <option value="cupcakes">Cupcakes</option>
+                        <option value="cookies">Cookies</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message / Details</label>
+                    <textarea id="message" name="message" rows="5" required
+                        placeholder="Tell me about your theme, flavors, and any dietary requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Enquiry</button>
+            </form>
+            <div id="formMessage" class="form-message hidden"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Lala's Bakes and Cakes. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/lalasbakesandcakes/" target="_blank">Instagram</a> |
+            <a href="https://www.facebook.com/people/LaLas-Bakes-Cakes/61581189190697/" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
