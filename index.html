@@ -13,6 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@400;600;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "DpgQmqSuvuFEOGMf1",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -63,10 +72,10 @@
     <section id="menu" class="section menu">
         <div class="container">
             <h2>Our Menu</h2>
-            <p>Delicious treats baked fresh for you. We also take custom requests!</p>
+            <p>Delicious treats baked fresh for you. We also take requests for bespoke bakes!</p>
             <div class="menu-images">
-                <img src="images/Menu1.JPG" alt="Lala's Bakes and Cakes Menu Page 1" class="menu-img">
-                <img src="images/Menu2.JPG" alt="Lala's Bakes and Cakes Menu Page 2" class="menu-img">
+                <img src="images/Menu1.jpg" alt="Lala's Bakes and Cakes Menu Page 1" class="menu-img">
+                <img src="images/Menu2.jpg" alt="Lala's Bakes and Cakes Menu Page 2" class="menu-img">
             </div>
 
             <div class="menu-list">
@@ -136,7 +145,7 @@
             <h2>Follow us on Instagram</h2>
             <!-- LightWidget WIDGET -->
             <script src="http://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-            <iframe src="http://lightwidget.com/widgets/7911a565f77955b5b2108c2524ae3372.html" scrolling="no"
+            <iframe src="http://lightwidget.com/widgets/0477d04c58575a8cbc559ff3fdf29847.html" scrolling="no"
                 allowtransparency="true" class="lightwidget-widget"
                 style="width:80%;border:0;overflow:hidden;"></iframe>
         </div>
@@ -164,7 +173,7 @@
                     <label for="message">Message / Details</label>
                     <textarea id="message" name="message" rows="10" required placeholder="Please tell me as much information as possible to help with your enquiry:
                         
-    - Ordering off the menu or custom made?
+    - Ordering off the menu or a bespoke bake?
     - Quantity required
     - Occasion
     - Any dietary requirements?

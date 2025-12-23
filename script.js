@@ -40,28 +40,46 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            // Simulate form submission
             const submitBtn = form.querySelector('.btn-submit');
             const originalText = submitBtn.innerText;
 
             submitBtn.innerText = 'Sending... 🧁';
             submitBtn.disabled = true;
 
-            setTimeout(() => {
-                form.reset();
-                formMessage.innerText = "Thanks! Your enquiry has been sent. Lala will get back to you soon! 🍰";
-                formMessage.classList.remove('hidden');
-                formMessage.classList.add('success');
+            // Replace these with your actual Service ID and Template ID
+            // See: https://www.emailjs.com/docs/tutorial/creating-contact-form/
+            const serviceID = 'service_0nmu8ua';
+            const templateID = 'template_sl06rvt';
 
-                submitBtn.innerText = originalText;
-                submitBtn.disabled = false;
+            emailjs.sendForm(serviceID, templateID, form)
+                .then(() => {
+                    form.reset();
+                    formMessage.innerText = "Thanks! Your enquiry has been sent. Lala will get back to you soon! 🍰";
+                    formMessage.classList.remove('hidden');
+                    formMessage.classList.add('success');
 
-                // Hide message after 5 seconds
-                setTimeout(() => {
-                    formMessage.classList.add('hidden');
-                    formMessage.classList.remove('success');
-                }, 5000);
-            }, 1500);
+                    submitBtn.innerText = originalText;
+                    submitBtn.disabled = false;
+
+                    // Hide message after 5 seconds
+                    setTimeout(() => {
+                        formMessage.classList.add('hidden');
+                        formMessage.classList.remove('success');
+                    }, 5000);
+                }, (err) => {
+                    submitBtn.innerText = originalText;
+                    submitBtn.disabled = false;
+
+                    console.error('EmailJS Error:', err);
+                    formMessage.innerText = "Oops! Something went wrong. Please try again or email directly.";
+                    formMessage.classList.remove('hidden');
+                    // Optional: Add an error class for styling if you have one
+                    // formMessage.classList.add('error'); 
+
+                    setTimeout(() => {
+                        formMessage.classList.add('hidden');
+                    }, 5000);
+                });
         });
     }
 });

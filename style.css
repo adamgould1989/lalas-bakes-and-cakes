@@ -549,3 +549,26 @@ footer {
 .toggle .line3 {
     transform: rotate(45deg) translate(-7px, -7px);
 }
+
+/* Target the main container of the LightWidget popup */
+.lightwidget__lightbox,
+#lightwidget__lightbox {
+    max-height: 70vh !important;
+    /* Forces the box to 80% of screen height */
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+/* Target the content area where the image/video lives */
+.lightwidget__lightbox-content {
+    height: 50% !important;
+    max-height: 500px !important;
+    /* Set your specific pixel height here */
+}
+
+/* Ensure the image inside doesn't overflow */
+.lightwidget__lightbox-content img,
+.lightwidget__lightbox-content video {
+    max-height: 100% !important;
+    object-fit: contain !important;
+}
