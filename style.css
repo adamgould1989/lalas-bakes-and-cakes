@@ -8,7 +8,7 @@
     --text-dark: #4A403A;
     /* Dark Chocolate */
     --text-light: #FFF;
-    --bg-light: #FEFAE0;
+    --bg-light: #93c2a0;
     /* Off-white/Cream */
     --font-heading: 'Chewy', cursive;
     --font-body: 'Quicksand', sans-serif;
@@ -97,7 +97,7 @@ a {
 
 /* Hero Section */
 .hero {
-    height: 85vh;
+    height: 50vh;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
@@ -129,7 +129,7 @@ a {
     border-radius: 50px;
     font-family: var(--font-heading);
     font-size: 1.8rem;
-    box-shadow: 0 5px 0 #e58a92;
+    box-shadow: 0 5px 0 #554546;
     transition: transform 0.1s, box-shadow 0.1s;
 }
 
@@ -208,6 +208,15 @@ h2 {
     border: 5px solid white;
 }
 
+.about-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 10px 10px 0 var(--primary-color);
+    border: 5px solid white;
+}
+
 /* Menu Section */
 .menu {
     background-color: var(--secondary-color);
@@ -246,6 +255,60 @@ h2 {
 
 .menu-img:hover {
     transform: rotate(2deg) scale(1.02);
+}
+
+.menu-list {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.menu-category {
+    margin-bottom: 2rem;
+}
+
+.menu-category h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px dashed var(--secondary-color);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.menu-items {
+    list-style: none;
+}
+
+.menu-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.item-name {
+    color: var(--text-dark);
+}
+
+.item-connector {
+    flex: 1;
+    border-bottom: 2px dotted #ccc;
+    margin: 0 10px;
+}
+
+.item-price {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
 }
 
 /* Gallery */
