@@ -411,6 +411,8 @@ h2 {
     -webkit-appearance: none;
     box-sizing: border-box;
     max-width: 100%;
+    min-height: 3.5rem;
+    line-height: 1.5;
 }
 
 .form-group input:focus,
