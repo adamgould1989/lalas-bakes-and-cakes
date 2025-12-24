@@ -449,7 +449,9 @@ h2 {
 /* Footer */
 footer {
     padding: 3rem;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 2px, transparent 2.5px);
+    background-size: 30px 30px;
     color: white;
     text-align: center;
 }
@@ -462,7 +464,7 @@ footer {
 .socials a {
     color: white;
     font-weight: 700;
-    background: rgba(255, 255, 255, 0.2);
+    background-color: var(--primary-color);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     margin: 0 0.5rem;
