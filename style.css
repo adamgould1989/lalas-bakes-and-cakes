@@ -98,7 +98,7 @@ a {
 /* Hero Section */
 .hero {
     height: 50vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('images/banner1.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
