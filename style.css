@@ -102,7 +102,9 @@ a {
 
 /* Hero Section */
 .hero {
-    height: 50vh;
+    min-height: 50vh;
+    height: auto;
+    padding-bottom: 3rem;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('images/banner1.jpg');
     background-size: cover;
     background-position: center;
