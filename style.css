@@ -473,6 +473,8 @@ footer {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     margin: 0 0.5rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
 }
 
 .socials a:hover {
