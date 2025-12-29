@@ -43,6 +43,21 @@ document.addEventListener('DOMContentLoaded', () => {
             const submitBtn = form.querySelector('.btn-submit');
             const originalText = submitBtn.innerText;
 
+            const emailInput = form.querySelector('input[name="email"]');
+            const emailValue = emailInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailRegex.test(emailValue)) {
+                formMessage.innerText = "Please enter a valid email address.";
+                formMessage.classList.remove('hidden');
+                // formMessage.classList.add('error'); // Optional error class
+
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 3000);
+                return;
+            }
+
             submitBtn.innerText = 'Sending... 🧁';
             submitBtn.disabled = true;
 
