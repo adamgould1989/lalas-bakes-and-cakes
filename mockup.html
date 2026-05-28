@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup — Brand Hub Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ── Hub hero ── */
+        .hub-hero {
+            padding: 5rem 5% 4rem;
+            text-align: center;
+            background: #fff;
+        }
+
+        .hub-hero h1 {
+            font-family: var(--font-heading);
+            color: var(--text-dark);
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 0.5rem;
+        }
+
+        .hub-hero > p {
+            color: #888;
+            font-size: 1.1rem;
+            margin-bottom: 3.5rem;
+        }
+
+        /* ── Cards grid ── */
+        .hub-cards {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hub-card {
+            background: #fff;
+            border: 3px dashed var(--primary-color);
+            border-radius: 28px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+            width: 280px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s;
+        }
+
+        .hub-card:hover {
+            transform: translateY(-6px);
+        }
+
+        /* Card header areas */
+        .hub-card-header {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+
+        .hub-card-bakes {
+            background: var(--primary-color);
+        }
+
+        .hub-card-bakes .bakes-emoji {
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+
+        .hub-card-bakes h3 {
+            font-family: var(--font-heading);
+            color: #fff;
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 0 rgba(0,0,0,0.12);
+            margin: 0;
+        }
+
+        .hub-card-party {
+            background: var(--secondary-color);
+        }
+
+        .hub-card-social {
+            background: #fce4ec;
+        }
+
+        .hub-card-party img,
+        .hub-card-social img {
+            max-width: 200px;
+            max-height: 170px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Card body */
+        .hub-card-body {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .hub-card-body p {
+            color: var(--text-dark);
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .hub-card-body .btn-main {
+            width: 100%;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        /* ── Simplified about strip ── */
+        .hub-about-strip {
+            background: var(--bg-light);
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        .hub-about-strip p {
+            max-width: 640px;
+            margin: 0 auto;
+            color: var(--text-dark);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* ── Annotation bar ── */
+        .mockup-note {
+            background: #fffde7;
+            border-top: 3px dashed #f9a825;
+            padding: 1rem 5%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6d5500;
+            font-family: var(--font-body);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hub-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hub-card {
+                width: 100%;
+                max-width: 360px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mockup-note">
+        ✏️ This is a <strong>design mockup</strong> — not the live site. It shows what the brand hub homepage could look like.
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Lala's Bakes & Cakes 🧁</div>
+        <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#" class="btn-nav">Get in Touch</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="hub-hero">
+        <h1>Sweet Treats & Creative Experiences</h1>
+        <p>Made with love in NW London</p>
+
+        <div class="hub-cards">
+
+            <div class="hub-card">
+                <div class="hub-card-header hub-card-bakes">
+                    <div class="bakes-emoji">🧁</div>
+                    <h3>Lala's Bakes & Cakes</h3>
+                </div>
+                <div class="hub-card-body">
+                    <p>Custom cakes, brownies, tarts and sweet treats — freshly baked to order for any occasion.</p>
+                    <a href="#" class="btn-main">View Menu</a>
+                </div>
+            </div>
+
+            <div class="hub-card">
+                <div class="hub-card-header hub-card-party">
+                    <img src="images/PartyKitchenLOGO.png" alt="LaLa's Party Kitchen">
+                </div>
+                <div class="hub-card-body">
+                    <p>Fully hosted dessert decorating parties for children and families. DBS checked, assistant included.</p>
+                    <a href="party-kitchen.html" class="btn-main">Book a Party</a>
+                </div>
+            </div>
+
+            <div class="hub-card">
+                <div class="hub-card-header hub-card-social">
+                    <img src="images/SocialKitchenLOGO.png" alt="LaLa's Social Kitchen">
+                </div>
+                <div class="hub-card-body">
+                    <p>Stylish hosted experiences for hen parties, baby showers, girls' nights and special celebrations.</p>
+                    <a href="social-kitchen.html" class="btn-main">Book an Experience</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="hub-about-strip">
+        <p>All experiences are fully hosted and thoughtfully styled — with all ingredients, equipment and setup included, so you can relax and enjoy every moment.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Lala's Bakes and Cakes. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/lalasbakesandcakes/" target="_blank">Instagram</a> |
+            <a href="https://www.facebook.com/people/LaLas-Bakes-Cakes/61581189190697/" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

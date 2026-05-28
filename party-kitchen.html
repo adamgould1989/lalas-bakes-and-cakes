@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaLa's Party Kitchen | Book a Dessert Decorating Party</title>
+    <meta name="description"
+        content="Book a beautifully hosted dessert decorating party for children with LaLa's Party Kitchen. Fully hosted, DBS checked, assistant included. Based in NW London.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "DpgQmqSuvuFEOGMf1",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Lala's Bakes & Cakes 🧁</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#instagram">Gallery</a></li>
+            <li><a href="#booking" class="btn-nav">Book Now</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="subpage-hero">
+        <img src="images/PartyKitchenLOGO.png" alt="LaLa's Party Kitchen">
+        <p>Fun, creative dessert decorating parties for children — fully hosted, thoughtfully styled and completely
+            stress-free.</p>
+        <a href="#booking" class="btn-main">Book a Party</a>
+    </section>
+
+    <section class="section experiences">
+        <div class="container">
+            <div class="experiences-content">
+                <p>LaLa's Party Kitchen offers beautifully hosted dessert decorating experiences for children and
+                    families.</p>
+                <p>From colourful birthday parties to fun end-of-term celebrations, our parties are designed to bring
+                    children together through creativity, sweet treats and stress-free hosting.</p>
+                <p>Every party is fully hosted and thoughtfully styled, with all ingredients, equipment and setup
+                    included — so parents can relax and enjoy watching the fun unfold.</p>
+                <p>Suitable for all experience levels and designed to leave every child with something delicious to take
+                    home.</p>
+                <ul class="experiences-features">
+                    <li>✨ Fully hosted</li>
+                    <li>✨ DBS checked</li>
+                    <li>✨ Assistant included at every party</li>
+                    <li>✨ Vegetarian ingredients as standard</li>
+                    <li>✨ All ingredients, equipment and setup included</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="section contact">
+        <div class="container">
+            <h2>Book Your Party</h2>
+            <p>Ready to plan a party your children will never forget? Fill out the form below and Lala will get back to
+                you with availability and a quote.</p>
+            <form id="enquiryForm" class="enquiry-form">
+                <div class="form-group">
+                    <label for="name">Your Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date <span class="required">*</span></label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Party Details <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="15" required placeholder="Please tell us as much as possible to help plan your party:
+
+- How many children are attending?
+- Ages of the children
+- Occasion (birthday, end of term, etc.)
+- Any dietary requirements or allergies?
+- Preferred start time
+- Any other details or requests"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Enquiry</button>
+            </form>
+            <div id="formMessage" class="form-message hidden"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Lala's Bakes and Cakes. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/lalasbakesandcakes/" target="_blank">Instagram</a> |
+            <a href="https://www.facebook.com/people/LaLas-Bakes-Cakes/61581189190697/" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

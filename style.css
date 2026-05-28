@@ -65,6 +65,7 @@ a {
     font-size: 2rem;
     color: var(--primary-color);
     text-shadow: 2px 2px 0 var(--secondary-color);
+    text-decoration: none;
 }
 
 .nav-links {
@@ -382,6 +383,149 @@ h2 {
     .experiences-content {
         padding: 1.5rem;
     }
+
+    .subpage-hero img {
+        max-width: 200px;
+    }
+}
+
+/* Hub offering cards */
+.hub-offerings {
+    background-color: #fff;
+}
+
+.hub-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.hub-card {
+    background: #fff;
+    border: 3px dashed var(--primary-color);
+    border-radius: 28px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+    width: 280px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s;
+}
+
+.hub-card:hover {
+    transform: translateY(-6px);
+}
+
+.hub-card-header {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.hub-card-bakes {
+    background: var(--primary-color);
+}
+
+.hub-card-bakes .bakes-emoji {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+}
+
+.hub-card-bakes h3 {
+    font-family: var(--font-heading);
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.12);
+    margin: 0;
+}
+
+.hub-card-party {
+    background-color: var(--secondary-color);
+}
+
+.hub-card-social {
+    background-color: #fce4ec;
+}
+
+.hub-card-party img,
+.hub-card-social img {
+    max-width: 200px;
+    max-height: 170px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hub-card-body {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.hub-card-body p {
+    color: var(--text-dark);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.hub-card-body .btn-main {
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .hub-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hub-card {
+        width: 100%;
+        max-width: 360px;
+    }
+}
+
+/* Sub-page hero */
+.subpage-hero {
+    padding: 4rem 5% 3rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.subpage-hero img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.subpage-hero p {
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Experiences CTAs */
+.experiences-ctas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 /* Gallery */
