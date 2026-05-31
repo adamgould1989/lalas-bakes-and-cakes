@@ -496,6 +496,15 @@ h2 {
     }
 }
 
+/* Brochure image */
+.brochure-img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
 /* Sub-page hero */
 .subpage-hero {
     padding: 4rem 5% 3rem;
