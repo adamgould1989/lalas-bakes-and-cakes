@@ -407,7 +407,7 @@ h2 {
     border: 3px dashed var(--primary-color);
     border-radius: 28px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
-    width: 280px;
+    width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -425,11 +425,57 @@ h2 {
     justify-content: center;
     flex-direction: column;
     padding: 1.5rem;
+    position: relative;
 }
 
 .hub-card-bakes {
     background: var(--primary-color);
 }
+
+.hub-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 280px;
+}
+
+.card-badge {
+    background: var(--primary-color);
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.card-tagline {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0;
+    text-align: center;
+}
+
+.deco {
+    position: absolute;
+    font-size: 1.5rem;
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.deco-tl { top: 12px; left: 12px; }
+.deco-tr { top: 12px; right: 12px; }
+.deco-ml { top: 50%; left: 12px; transform: translateY(-50%); }
+.deco-mr { top: 50%; right: 12px; transform: translateY(-50%); }
+.deco-bl { bottom: 12px; left: 12px; }
+.deco-br { bottom: 12px; right: 12px; }
 
 .hub-card-bakes .bakes-emoji {
     font-size: 4rem;
@@ -482,6 +528,8 @@ h2 {
     width: 100%;
     text-align: center;
     margin-top: auto;
+    font-size: 1.4rem;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -490,9 +538,13 @@ h2 {
         align-items: center;
     }
 
-    .hub-card {
+    .hub-card-wrapper {
         width: 100%;
         max-width: 360px;
+    }
+
+    .hub-card {
+        width: 100%;
     }
 }
 
